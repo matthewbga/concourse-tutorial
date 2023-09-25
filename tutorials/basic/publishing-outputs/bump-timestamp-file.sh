@@ -3,6 +3,8 @@
 set -e # fail fast
 set -x # print commands
 
+ls -la
+
 git clone resource-gist updated-gist
 
 cd updated-gist
