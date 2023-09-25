@@ -5,7 +5,8 @@ set -x # print commands
 
 ls -la
 
-git clone resource-gist updated-gist
+# git clone resource-gist updated-gist
+cp -rf ./resource-gist ./updated-gist
 
 cd updated-gist
 date > bumpme
