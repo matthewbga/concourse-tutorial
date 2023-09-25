@@ -19,3 +19,6 @@ git config --global user.name "Concourse"
 
 git add .
 git commit -m "Bumped date"
+
+git remote -v
+git status
