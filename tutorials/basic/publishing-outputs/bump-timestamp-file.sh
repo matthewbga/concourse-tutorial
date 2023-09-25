@@ -5,6 +5,7 @@ set -x # print commands
 
 ls -la
 
+whih git
 # git clone resource-gist updated-gist
 cp -rf ./resource-gist ./updated-gist
 
@@ -12,9 +13,7 @@ uname -a
 
 cd updated-gist
 date > bumpme
-echo "bumpme updated. Here it is..."
 cat bumpme
-echo "bumpme ---^"
 
 git config --global user.email "nobody@concourse-ci.org"
 git config --global user.name "Concourse"
