@@ -3,8 +3,8 @@ resources:
   - name: resource-tutorial
     type: git
     source:
-      uri: https://github.com/starkandwayne/concourse-tutorial.git
-      branch: develop
+      uri: https://github.com/matthewbga/concourse-tutorial.git
+      branch: master
 
 jobs:
   - name: job-pass-files
@@ -21,7 +21,7 @@ jobs:
           inputs:
             - name: resource-tutorial
           outputs:
-            - name: some-files
+            - name: some-files-1
 
           run:
             path: resource-tutorial/tutorials/basic/task-outputs-to-inputs/create_some_files.sh
@@ -35,7 +35,7 @@ jobs:
 
           inputs:
             - name: resource-tutorial
-            - name: some-files
+            - name: some-files-1
 
           run:
             path: resource-tutorial/tutorials/basic/task-outputs-to-inputs/show_files.sh
