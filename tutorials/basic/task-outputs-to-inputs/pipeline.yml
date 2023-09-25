@@ -21,10 +21,10 @@ jobs:
           inputs:
             - name: resource-tutorial
           outputs:
-            - name:  some_files
+            - name:  output_to_input_files
 
           run:
-            path: resource-tutorial/tutorials/basic/task-outputs-to-inputs/create_some_files.sh
+            path: resource-tutorial/tutorials/basic/task-outputs-to-inputs/create_output_to_input_files.sh
 
       - task: show-some-files
         config:
@@ -35,7 +35,7 @@ jobs:
 
           inputs:
             - name: resource-tutorial
-            - name:  some_files
+            - name:  output_to_input_files
 
           run:
             path: resource-tutorial/tutorials/basic/task-outputs-to-inputs/show_files.sh

@@ -13,7 +13,7 @@ A task file declares it will publish outputs with the `outputs` section:
 
 ```
 outputs:
-- name: some_files
+- name: output_to_input_files
 ```
 
 If a task included the above `outputs` section then its `run:` command would be responsible for putting interesting files in the `some-files` directory.
@@ -47,17 +47,17 @@ jobs:
       inputs:
       - name: resource-tutorial
       outputs:
-      - name: some_files
+      - name: output_to_input_files
 
       run:
-        path: resource-tutorial/tutorials/basic/task-outputs-to-inputs/create_some_files.sh
+        path: resource-tutorial/tutorials/basic/task-outputs-to-inputs/create_output_to_input_files.sh
 
   - task: show-some-files
     config:
       ...
       inputs:
       - name: resource-tutorial
-      - name: some_files
+      - name: output_to_input_files
 
       run:
         path: resource-tutorial/tutorials/basic/task-outputs-to-inputs/show_files.sh
