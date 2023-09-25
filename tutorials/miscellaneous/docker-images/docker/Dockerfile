@@ -1,6 +1,8 @@
-FROM busybox
+FROM ubuntu:latest
+
+RUN apt-get -y update
+RUN apt-get -y install git
 
 ADD hello-world /bin/hello-world
 
-ENV NAME=world
 ENTRYPOINT ["/bin/hello-world"]
