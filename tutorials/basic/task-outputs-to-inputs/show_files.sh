@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#ls some-files/*
+#ls some_files/*
 echo "some_files/file1..."
 cat some_files/file1
 echo "some_files/file2..."

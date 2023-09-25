@@ -1,9 +1,9 @@
 #!/bin/sh
 
-mkdir some-files
-echo "mung-bean" > some-files/file1
-echo "file2" > some-files/file2
-echo "file3" > some-files/file3
-echo "file4" > some-files/file4
+mkdir some_files
+echo "mung-bean" > some_files/file1
+echo "file2" > some_files/file2
+echo "file3" > some_files/file3
+echo "file4" > some_files/file4
 
-ls some-files/*
+ls some_files/*
