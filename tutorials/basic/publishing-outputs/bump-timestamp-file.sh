@@ -5,11 +5,10 @@ set -x # print commands
 
 ls -la
 
-whih git
-# git clone resource-gist updated-gist
-cp -rf ./resource-gist ./updated-gist
-
 uname -a
+
+git clone resource-gist updated-gist
+# cp -rf ./resource-gist ./updated-gist
 
 cd updated-gist
 date > bumpme
