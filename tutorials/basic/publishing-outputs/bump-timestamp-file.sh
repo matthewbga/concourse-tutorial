@@ -8,6 +8,8 @@ ls -la
 # git clone resource-gist updated-gist
 cp -rf ./resource-gist ./updated-gist
 
+uname -a
+
 cd updated-gist
 date > bumpme
 echo "bumpme updated. Here it is..."
